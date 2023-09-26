@@ -1,0 +1,79 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{童尚清}
+
+\basicInfo{
+  \email{tongshq@shanghaitech.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 188-0031-8979} \textperiodcentered\ 
+  \github[\texttt{github.com/noeltong}]{https://github.com/noeltong}}
+ 
+\section{\faGraduationCap\quad 教育背景}
+\datedsubsection{\textbf{上海科技大学}, 上海, 浦东新区}{2021 -- 至今}
+\textit{在读硕士研究生}\quad 电子科学与技术, 预计2024年6月毕业
+\datedsubsection{\textbf{江南大学}, 江苏, 无锡}{2017 -- 2021}
+\textit{学士}\quad 通信工程
+
+\section{\faUsers\quad 科研经历}
+\datedsubsection{\textbf{基于扩散模型的PAT重建算法}}{IEEE TMI (2023, 在投)}
+\role{共同一作}{与清华大学兰恒荣博士合作}
+使用扩散模型实现无监督光声层析成像重建任务
+\begin{itemize}
+    \item 只使用全采样图片进行训练, 实现了与监督训练的U-Net相近的性能并有更高的泛化能力;
+    \item 根据PAT图片与信号的旋转不变性设计了约束项, 引导郎之万动力学采样过程;
+    \item 均匀降采样, 随机降采样条件下结果为(...). 有限视角下的结果明显优于监督训练的基线模型.
+\end{itemize}
+
+\datedsubsection{\textbf{ICU重症病人死亡率预测}}{Reviews in Cardiovascular Medicine (2023)}
+\role{共同一作}{与复旦大学附属中山医院重症医学科合作}
+
+\begin{itemize}
+    \item 根据ICU重症病人的腿部红外热图数据预测重症病人的死亡率, 比较了多种通用视觉主干的性能优劣;
+    \item 结合了Focal Loss, 在不平衡数据集上得到更高的准确率.
+\end{itemize}
+
+\datedsubsection{\textbf{PAM结直肠癌信号处理与诊断}}{IEEE IUS (2022), 口头报告}
+\role{共同一作}{与中国人民解放军总医院第一医学中心普通外科医学部合作}
+
+\begin{itemize}
+    \item 使用PAM对离体结直肠癌组织样品进行扫描, 得到了癌症, 息肉与健康组织的PAM信号;
+    \item 使用信号的频谱分析方法将癌症组织信号与健康组织信号加以区分;
+    \item 比较了多种机器学习方法对癌症与健康信号的分类性能.
+\end{itemize}
+
+\section{\faCogs\quad 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: 熟练掌握Python, MATLAB, \LaTeX\
+  \item DL工具: PyTorch, JAX
+  \item 平台: Linux
+\end{itemize}
+
+\section{\faHeartO\quad 获奖情况}
+\datedline{上海科技大学研究生校级奖学金}{2021 -- 2024}
+% \datedline{其他奖项}{2015}
+
+\section{\faInfo\quad 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 谷歌学术: \url{https://scholar.google.com/citations?user=-TaP8h4AAAAJ&hl=zh-CN}
+  \item 语言: 英语 - 熟练(四级610, 六级509)
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

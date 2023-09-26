@@ -1,0 +1,77 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Shangqing Tong}
+
+\basicInfo{
+  \email{tongshq@shanghaitech.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 188-0031-8979} \textperiodcentered\ 
+  \github[\texttt{github.com/noeltong}]{https://github.com/noeltong}}
+
+\section{\faGraduationCap\quad Education}
+\datedsubsection{\textbf{ShanghaiTech University}, Pudong, Shanghai, China}{2021 -- Present}
+\textit{Master student} in Electronics Engineering (EE), expected March 2024
+\datedsubsection{\textbf{Jiangnan University}, Wuxi, Jiangsu, China}{2017 -- 2021}
+\textit{B.S.} in Communication Engineering
+
+\section{\faUsers\quad Publications}
+\datedsubsection{\textbf{PAT Reconstruction with Score-based Diffusion Models}}{TMI 2023, Under Review}
+\role{Co-first Author}{Cooperated with Dr.~Hengrong Lan, Department of Biomedical Engineering, School of Medicine, Tsinghua University}
+Reconstructing photoacoustic tomography images with score-based diffusion models.
+\begin{itemize}
+  \item Trained with only gray ground truth images, our method achieved competitive performance against supervised U-Net, while ours has higher generalization capability;
+  \item A constraint is designed following the rotation equivariance between PAT measurements and images, which is used to guide the Langevin sampling process;
+  \item Our method achieved 35.06 PSNR, 0.913 SSIM in uniform sampling with 32 measurements; and 29.69 PSNR, 0.823 SSIM in limited view with 32 measurements (128 in total).
+\end{itemize}
+
+\datedsubsection{\textbf{Assessing the Mortality Risk of Critically Ill Patients with Deep Learning}}{RCM 2023}
+\role{Co-first Author}{Cooperated with Department of Critical Care Medicine, Zhongshan Hospital, Fudan University}
+The aim of this study was to assess the mortality risk of critically ill patients at risk of hypoperfusion in a prospective cohort by infrared thermography combined with deep learning methods.
+\begin{itemize}
+  \item Compared the classification capability of several widely used vision backbones;
+  \item Combined conventional cross-entropy loss with focal loss and label smoothing, which further improved the performance on the imbanlanced dataset.
+\end{itemize}
+
+\datedsubsection{\textbf{Classification of Benign and Malignant Colorectal Tissue with AR-PAM}}{IUS 2022, Oral}
+\role{Co-first Author}{Cooperated with the First Medical Centre, Chinese PLA General Hospital}
+Classifying the benign and malignant tissues using wavelet transform of the PAM signals.
+\begin{itemize}
+  \item Signals of cancer, polyp and normal tissues were obtained by scanning the \textit{ex-vivo} colorectal samples;
+  \item Classify the cancer and normal regions with wavelet transform.
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\quad Skills}
+\begin{itemize}[parsep=0.5ex]
+    \item Research Interests: Solving inverse problems with generative models, Computer vision in biomedical applications;
+    \item Platform: Linux
+    \item Programming Languages: Python, MATLAB, \LaTeX{}; DL framework: PyTorch > JAX
+\end{itemize}
+
+\section{\faHeartO\quad Honors and Awards}
+\datedline{Graduate Scholarship of ShanghaiTech University}{Nov. 2021, Nov. 2022}
+% \datedline{Other awards}{2015}
+
+\section{\faInfo\quad\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Google Scholar: \url{https://scholar.google.com/citations?user=-TaP8h4AAAAJ&hl=zh-CN}
+  \item Languages: English - Fluent (CET-4 610, CET-6 509), Mandarin - Native speaker
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
