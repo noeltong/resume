@@ -4,6 +4,8 @@
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
+\usepackage{iitem}
+
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
@@ -21,25 +23,33 @@
 \textit{B.S.} in Communication Engineering
 
 \section{\faUsers\quad Publications}
-\datedsubsection{\textbf{PAT Reconstruction with Score-based Diffusion Models}}{TMI 2023, Under Review}
-\role{Co-first Author}{Cooperated with Dr.~Hengrong Lan, Department of Biomedical Engineering, School of Medicine, Tsinghua University}
+\datedsubsection{\textbf{Photoacoustic Tomography Reconstruction with Score-based Diffusion Models}}{}
+\textit{IEEE Transactions on Medical Imaging, IF 10.6, Under Review}
+\role{Co-first Author}{Colaborated with Dr.~Hengrong Lan, Department of Biomedical Engineering, School of Medicine, Tsinghua University}
 Reconstructing photoacoustic tomography images with score-based diffusion models.
 \begin{itemize}
-  \item Trained with only gray ground truth images, our method achieved competitive performance against supervised U-Net, while ours has higher generalization capability;
+  \item Trained with only ground truth images, our method achieved competitive performance against supervised U-Net, while ours has higher generalization capability;
   \item A constraint is designed following the rotation equivariance between PAT measurements and images, which is used to guide the Langevin sampling process;
   \item Our method achieved 35.06 PSNR, 0.913 SSIM in uniform sampling with 32 measurements; and 29.69 PSNR, 0.823 SSIM in limited view with 32 measurements (128 in total).
 \end{itemize}
 
-\datedsubsection{\textbf{Assessing the Mortality Risk of Critically Ill Patients with Deep Learning}}{RCM 2023}
-\role{Co-first Author}{Cooperated with Department of Critical Care Medicine, Zhongshan Hospital, Fudan University}
+\datedsubsection{\textbf{Review of Deep Learning Applications in Photoacoustic Imaging}}{}
+\textit{Journal of Biomedical Optics, IF 3.5, Under Review}
+\role{Co-first Author}{Colaborated with Hybrid Imaging System Laboratory, ShanghaiTech University}
+A brief review of deep learning applications in photoacoustic imaging among recent years.
+
+\datedsubsection{\textbf{Assessing the Mortality Risk of Critically Ill Patients with Deep Learning}}{}
+\textit{Reviews in Cardiovascular Medicine, IF 2.7}
+\role{Co-first Author}{Colaborated with Department of Critical Care Medicine, Zhongshan Hospital, Fudan University}
 The aim of this study was to assess the mortality risk of critically ill patients at risk of hypoperfusion in a prospective cohort by infrared thermography combined with deep learning methods.
 \begin{itemize}
   \item Compared the classification capability of several widely used vision backbones;
   \item Combined conventional cross-entropy loss with focal loss and label smoothing, which further improved the performance on the imbanlanced dataset.
 \end{itemize}
 
-\datedsubsection{\textbf{Classification of Benign and Malignant Colorectal Tissue with AR-PAM}}{IUS 2022, Oral}
-\role{Co-first Author}{Cooperated with the First Medical Centre, Chinese PLA General Hospital}
+\datedsubsection{\textbf{Classification of Benign and Malignant Colorectal Tissue with AR-PAM}}{}
+\textit{2022 IEEE International Ultrasonics Symposium, Oral Presentation}
+\role{Co-first Author}{Colaborated with the First Medical Centre, Chinese PLA General Hospital}
 Classifying the benign and malignant tissues using wavelet transform of the PAM signals.
 \begin{itemize}
   \item Signals of cancer, polyp and normal tissues were obtained by scanning the \textit{ex-vivo} colorectal samples;
@@ -54,10 +64,16 @@ Classifying the benign and malignant tissues using wavelet transform of the PAM 
 %\end{itemize}
 
 \section{\faCogs\quad Skills}
-\begin{itemize}[parsep=0.5ex]
-    \item Research Interests: Solving inverse problems with generative models, Computer vision in biomedical applications;
+\begin{itemize}
+    \item Research Interests
+    \begin{itemize}
+        \item Solving inverse problems in medical imaging with generative models,
+        \item Self-supervised representation learning and other pre-training methods,
+        \item Computer vision in biomedical applications;
+    \end{itemize}
     \item Platform: Linux
-    \item Programming Languages: Python, MATLAB, \LaTeX{}; DL framework: PyTorch > JAX
+    \item Programming Languages: Python, MATLAB, \LaTeX{};
+    \item DL framework: PyTorch > JAX
 \end{itemize}
 
 \section{\faHeartO\quad Honors and Awards}
@@ -65,9 +81,12 @@ Classifying the benign and malignant tissues using wavelet transform of the PAM 
 % \datedline{Other awards}{2015}
 
 \section{\faInfo\quad\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
+\begin{itemize}
   \item Google Scholar: \url{https://scholar.google.com/citations?user=-TaP8h4AAAAJ&hl=zh-CN}
-  \item Languages: English - Fluent (CET-4 610, CET-6 509), Mandarin - Native speaker
+  \item GitHub: \url{https://github.com/noeltong}
+  \item Languages
+  \iitem English - Fluent (CET-4 610, CET-6 509)
+  \iitem Mandarin - Native speaker
 \end{itemize}
 
 %% Reference

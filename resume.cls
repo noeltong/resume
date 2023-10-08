@@ -73,7 +73,7 @@
 
 \newcommand{\name}[1]{
   \centerline{\Huge\scshape{#1}}
-  \vspace{1.25ex}
+  \vspace{1.5ex}
 }
 
 % defines one's name
@@ -117,6 +117,6 @@
 }
 
 \newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
+  {\par \textbf{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
