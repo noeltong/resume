@@ -118,5 +118,5 @@
 
 \newcommand{\role}[2]{
   {\par \textbf{#1} ~ #2 \par}
-  \vspace{0.85ex}
+%   \vspace{0.85ex}
 }

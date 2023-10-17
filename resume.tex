@@ -5,6 +5,7 @@
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \usepackage{iitem}
+\usepackage{hyperref}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -16,16 +17,18 @@
   \phone{(+86) 188-0031-8979} \textperiodcentered\ 
   \github[\texttt{github.com/noeltong}]{https://github.com/noeltong}}
 
-\section{\faGraduationCap\quad Education}
+\section{Education}
+% \section{\faGraduationCap\quad Education}
 \datedsubsection{\textbf{ShanghaiTech University}, Pudong, Shanghai, China}{2021 -- Present}
 \textit{Master student} in Electronics Engineering (EE), expected March 2024
 \datedsubsection{\textbf{Jiangnan University}, Wuxi, Jiangsu, China}{2017 -- 2021}
 \textit{B.S.} in Communication Engineering
 
-\section{\faUsers\quad Publications}
-\datedsubsection{\textbf{Photoacoustic Tomography Reconstruction with Score-based Diffusion Models}}{}
+\section{Publications}
+% \section{\faUsers\quad Publications}
+\datedsubsection{\textbf{Score-based Generative Models for Photoacoustic Image Reconstruction with Rotation Consistency Constraints}}{}
 \textit{IEEE Transactions on Medical Imaging, IF 10.6, Under Review}
-\role{Co-first Author}{Colaborated with Dr.~Hengrong Lan, Department of Biomedical Engineering, School of Medicine, Tsinghua University}
+\role{First Author}{Colaborated with Dr.~Hengrong Lan, Department of Biomedical Engineering, School of Medicine, Tsinghua University.}
 Reconstructing photoacoustic tomography images with score-based diffusion models.
 \begin{itemize}
   \item Trained with only ground truth images, our method achieved competitive performance against supervised U-Net, while ours has higher generalization capability;
@@ -33,28 +36,42 @@ Reconstructing photoacoustic tomography images with score-based diffusion models
   \item Our method achieved 35.06 PSNR, 0.913 SSIM in uniform sampling with 32 measurements; and 29.69 PSNR, 0.823 SSIM in limited view with 32 measurements (128 in total).
 \end{itemize}
 
-\datedsubsection{\textbf{Review of Deep Learning Applications in Photoacoustic Imaging}}{}
+\datedsubsection{\textbf{Review of photoacoustic imaging plus X}}{}
 \textit{Journal of Biomedical Optics, IF 3.5, Under Review}
-\role{Co-first Author}{Colaborated with Hybrid Imaging System Laboratory, ShanghaiTech University}
+\role{Co-first Author}{Work with teammates in Hybrid Imaging System Laboratory, ShanghaiTech University.}
 A brief review of deep learning applications in photoacoustic imaging among recent years.
 
-\datedsubsection{\textbf{Assessing the Mortality Risk of Critically Ill Patients with Deep Learning}}{}
+\datedsubsection{\textbf{Interpreting Infrared Thermography with Deep Learning to Assess the Mortality Risk of Critically Ill Patients at Risk of Hypoperfusion}}{}
 \textit{Reviews in Cardiovascular Medicine, IF 2.7}
-\role{Co-first Author}{Colaborated with Department of Critical Care Medicine, Zhongshan Hospital, Fudan University}
+\role{Co-first Author}{Colaborated with Department of Critical Care Medicine, Zhongshan Hospital, Fudan University.}
 The aim of this study was to assess the mortality risk of critically ill patients at risk of hypoperfusion in a prospective cohort by infrared thermography combined with deep learning methods.
 \begin{itemize}
   \item Compared the classification capability of several widely used vision backbones;
   \item Combined conventional cross-entropy loss with focal loss and label smoothing, which further improved the performance on the imbanlanced dataset.
 \end{itemize}
 
-\datedsubsection{\textbf{Classification of Benign and Malignant Colorectal Tissue with AR-PAM}}{}
+\datedsubsection{\textbf{Benign and Malignant Classification of Human Colorectal Tissue by Acoustic-Resolution Photoacoustic Microscopy}}{}
 \textit{2022 IEEE International Ultrasonics Symposium, Oral Presentation}
-\role{Co-first Author}{Colaborated with the First Medical Centre, Chinese PLA General Hospital}
+\role{Co-first Author}{Colaborated with the First Medical Centre, Chinese PLA General Hospital.}
 Classifying the benign and malignant tissues using wavelet transform of the PAM signals.
 \begin{itemize}
   \item Signals of cancer, polyp and normal tissues were obtained by scanning the \textit{ex-vivo} colorectal samples;
   \item Classify the cancer and normal regions with wavelet transform.
 \end{itemize}
+
+\datedsubsection{\textbf{Machine-Learning-based Colorectal Tissue Classification via Acoustic Resolution Photoacoustic Microscopy}}{}
+\textit{Preprint, arXiv:2307.08556}
+\role{First Author}{Colaborated with the First Medical Centre, Chinese PLA General Hospital.}
+Comparison of the classification capability of several machine learning algorithms using the PAM signals of benign and malignant colorectal tissues.
+\begin{itemize}
+  \item Further improved the signal dataset, involving more tissues and improved the accuracy of the dataset;
+  \item Classify the cancer and normal signals with several machine learning algorithms, with several metrics calculated and compared.
+\end{itemize}
+
+\datedsubsection{\textbf{Frequency-selected Adaptive Matched Filter De-noising for Photoacoustic Imaging}}{}
+\textit{2023 IEEE International Ultrasonics Symposium, Oral Presentation, In Press}
+\role{Third Author}{Work with teammates in Hybrid Imaging System Laboratory, ShanghaiTech University.}
+PAM signal denoising with designed matched filter.
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -63,30 +80,35 @@ Classifying the benign and malignant tissues using wavelet transform of the PAM 
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\quad Skills}
+\section{Skills}
+% \section{\faCogs\quad Skills}
 \begin{itemize}
     \item Research Interests
     \begin{itemize}
         \item Solving inverse problems in medical imaging with generative models,
         \item Self-supervised representation learning and other pre-training methods,
-        \item Computer vision in biomedical applications;
+        \item Computer vision in biomedical applications.
     \end{itemize}
-    \item Platform: Linux
-    \item Programming Languages: Python, MATLAB, \LaTeX{};
-    \item DL framework: PyTorch > JAX
+    \item Platform: Linux.
+    \item Programming Languages: Python, MATLAB, \LaTeX{}.
+    \item DL framework: PyTorch > JAX.
 \end{itemize}
 
-\section{\faHeartO\quad Honors and Awards}
-\datedline{Graduate Scholarship of ShanghaiTech University}{Nov. 2021, Nov. 2022}
-% \datedline{Other awards}{2015}
+\section{Internship}
+% \section{\faHeartO\quad Internship}
+\datedline{\textbf{Central Research Institute, United Imaging Healthcare Group}, Shanghai}{Oct. 2023 -- Present}
+During my internship at United Imaging, my work mainly focused on the reconstruction and enhancement of positron emission tomography images using generative models like diffusion-based models.
 
-\section{\faInfo\quad\ Miscellaneous}
+
+\section{Miscellaneous}
+% \section{\faInfo\quad\ Miscellaneous}
 \begin{itemize}
-  \item Google Scholar: \url{https://scholar.google.com/citations?user=-TaP8h4AAAAJ&hl=zh-CN}
-  \item GitHub: \url{https://github.com/noeltong}
+  \item \href{https://scholar.google.com/citations?user=-TaP8h4AAAAJ&hl=zh-CN}{Link to my Google Scholar profile}.
   \item Languages
-  \iitem English - Fluent (CET-4 610, CET-6 509)
-  \iitem Mandarin - Native speaker
+  \begin{itemize}
+    \item English: Fluent (CET-4 610, CET-6 509),
+    \item Mandarin: Native speaker.
+  \end{itemize}
 \end{itemize}
 
 %% Reference
